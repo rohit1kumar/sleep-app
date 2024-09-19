@@ -1,4 +1,5 @@
 import dotenv from 'dotenv';
+import cors from 'cors';
 import express from 'express';
 import { eq } from 'drizzle-orm';
 import db from './db/index.js';
@@ -9,6 +10,7 @@ import { comparePassword, createToken, hashPassword, struggleDurationChoices } f
 dotenv.config()
 
 const app = express();
+app.use(cors())
 app.use(express.json());
 
 // Signup route
