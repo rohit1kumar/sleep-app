@@ -7,7 +7,7 @@ export default function SignUp({ onSignUp }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('/api/v1/users/signup', {
+            const response = await fetch('https://sleep-api.onrender.com/api/v1/users/signup', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ nickname, password }),

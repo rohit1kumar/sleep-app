@@ -4,7 +4,7 @@ export default function GoalSelection({ onGoalSelect }) {
     const [goals, setGoals] = useState([]);
 
     useEffect(() => {
-        fetch('/api/v1/goals')
+        fetch('https://sleep-api.onrender.com/api/v1/goals')
             .then(response => response.json())
             .then(data => setGoals(data))
             .catch(error => console.error('Error fetching goals:', error));

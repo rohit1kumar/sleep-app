@@ -17,7 +17,7 @@ export default function SleepDataEntry({ onDataSubmit, token, goalId }) {
         };
 
         try {
-            const response = await fetch('/api/v1/sleep_records', {
+            const response = await fetch('https://sleep-api.onrender.com/api/v1/sleep_records', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
