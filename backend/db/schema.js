@@ -25,6 +25,6 @@ export const sleepRecords = pgTable('sleep_records', {
     wakeup_time: time('wake_time').notNull(),
     sleep_duration: integer('sleep_duration').notNull(),
     sleep_efficiency: integer('sleep_efficiency'),
-    user_id: integer('user_id').references(() => users.id),
-    goal_id: integer('goal_id').references(() => goals.id)
+    user_id: integer('user_id').notNull().references(() => users.id),
+    goal_id: integer('goal_id').notNull().references(() => goals.id)
 });

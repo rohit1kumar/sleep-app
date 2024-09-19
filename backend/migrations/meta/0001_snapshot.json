@@ -1,6 +1,6 @@
 {
-  "id": "8af12a95-7d2c-44d1-bd0d-babd2c55b540",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "id": "46aa88ac-1c6f-485c-8836-e12a62ff8aa7",
+  "prevId": "8af12a95-7d2c-44d1-bd0d-babd2c55b540",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -77,13 +77,13 @@
           "name": "user_id",
           "type": "integer",
           "primaryKey": false,
-          "notNull": false
+          "notNull": true
         },
         "goal_id": {
           "name": "goal_id",
           "type": "integer",
           "primaryKey": false,
-          "notNull": false
+          "notNull": true
         }
       },
       "indexes": {},
