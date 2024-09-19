@@ -8,7 +8,7 @@ export default defineConfig(() => {
     plugins: [react()],
     server: {
       proxy: {
-        '/api': process.env.VITE_API_URL || "http://localhost:3000"
+        '/api': "https://sleep-api.onrender.com" || "http://localhost:3000"
       }
     }
   }
