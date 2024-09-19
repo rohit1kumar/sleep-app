@@ -10,7 +10,6 @@ export const authenticateToken = (req, res, next) => {
 
     jwt.verify(token, jwtSecret, (err, data) => {
         if (err) return res.status(403).json({ error: 'Forbidden' });
-        console.log({ data });
         req.userId = data.user_id;
         next();
     });
