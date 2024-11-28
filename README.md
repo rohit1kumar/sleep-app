@@ -1,6 +1,6 @@
 # Sleep App design
 
-## Database Schema
+## Database Schema Design
 ---
 ![Database Schema](./assests/db.svg)
 
